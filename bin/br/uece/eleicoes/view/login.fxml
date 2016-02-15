@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uece.eleicoes.Login">
+   <children>
+      <Button fx:id="btnSair" alignment="CENTER" layoutX="93.0" layoutY="200.0" mnemonicParsing="false" text="Sair" AnchorPane.topAnchor="200.0" />
+      <Button fx:id="btnEntrar" alignment="CENTER" layoutX="166.0" layoutY="200.0" mnemonicParsing="false" text="Entrar" AnchorPane.topAnchor="200.0" />
+      <TextField fx:id="txMatricula" alignment="CENTER" layoutX="50.0" layoutY="100.0" prefHeight="25.0" prefWidth="200.0" promptText="Digite aqui sua matrícula" AnchorPane.topAnchor="100.0" />
+      <Button fx:id="btnCadastrar" layoutX="111.0" layoutY="296.0" mnemonicParsing="false" text="Cadastre-se" AnchorPane.topAnchor="296.0" />
+      <PasswordField fx:id="txSenha" alignment="CENTER" layoutX="51.0" layoutY="150.0" prefHeight="25.0" prefWidth="200.0" promptText="Digite aqui sua senha" AnchorPane.topAnchor="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uece.eleicoes.CadastroUsuario">
+   <children>
+      <TextField fx:id="txMatricula" alignment="CENTER" layoutX="50.0" layoutY="102.0" prefHeight="25.0" prefWidth="200.0" promptText="Digite aqui sua matrícula" AnchorPane.topAnchor="120.0" />
+      <Button fx:id="btConcluir" layoutX="192.0" layoutY="294.0" mnemonicParsing="false" text="Concluir" AnchorPane.topAnchor="300.0" />
+      <TextField fx:id="txNome" alignment="CENTER" layoutX="50.0" layoutY="77.0" prefHeight="25.0" prefWidth="200.0" promptText="Digite seu Nome Completo" AnchorPane.topAnchor="80.0" />
+      <TextField fx:id="txCurso" alignment="CENTER" layoutX="50.0" layoutY="175.0" prefHeight="25.0" prefWidth="200.0" promptText="Digite o Nome do Curso" AnchorPane.topAnchor="160.0" />
+      <Button fx:id="btCancelar" layoutX="50.0" layoutY="294.0" mnemonicParsing="false" text="Cancelar" AnchorPane.topAnchor="300.0" />
+      <PasswordField fx:id="txSenha" alignment="CENTER" layoutX="50.0" layoutY="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Digite sua senha" AnchorPane.topAnchor="200.0" />
+      <PasswordField fx:id="txConfirmaSenha" alignment="CENTER" layoutX="50.0" layoutY="242.0" prefHeight="25.0" prefWidth="200.0" promptText="Confirme sua senha" AnchorPane.topAnchor="240.0" />
+      <Label layoutX="54.0" layoutY="40.0" text="Preencha TODOS os campos abaixo." AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>

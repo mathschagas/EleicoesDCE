@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.uece.eleicoes.VisualizacaoVotos">
+   <children>
+      <SplitPane dividerPositions="0.4699248120300752" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="chapaTable" prefHeight="209.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="51.0">
+                    <columns>
+                      <TableColumn fx:id="nomeChapaColumn" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Chapa" />
+                      <TableColumn fx:id="numVotosColumn" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" text="Qtd. de Votos" />
+                        <TableColumn fx:id="porcentagemVotosColumn" maxWidth="80.0" minWidth="80.0" text="\% de Votos" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btVoltar" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Voltar" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <BarChart fx:id="bcGraficoVotos" prefHeight="220.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <xAxis>
+                      <CategoryAxis fx:id="eixoX" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="eixoY" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
